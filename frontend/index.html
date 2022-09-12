@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <form id="new-task-form" action="creatTask" method="POST">
+            <label class="sr-only" for="namePlace">Nome</label>
+            <input id="new-task-input-name" type="text" name="newName"></input>
+
+            <label class="sr-only" for="descriptionPlace">Descrição</label>
+            <input id="new-task-input-description" type="text" name="newDescription"></input>
+
+            <label class="sr-only" for="finalDatePlace">Data Final</label>
+            <input id="new-task-input-finalDate" type="text" name="newFinalDate"></input>
+
+            <label class="sr-only" for="priorityPlace">Prioridade</label>
+            <input id="new-task-input-priority" type="text" name="newPriority"></input>
+
+            <label class="sr-only" for="categoryPlace">Categoria</label>
+            <input id="new-task-input-category" type="text" name="newCategory"></input>
+
+            <label class="sr-only" for="statusPlace">Estado</label>
+            <input id="new-task-input-status" type="text" name="newStatus"></input>
+            
+            <input type="submit" id="new-task-submit" value="Adcionar tarefa"/>
+            
+            <label class="sr-only" for="idPlace">Número da tarefa a ser editada</label>
+            <input id="new-task-input-id" type="text" name="id"></input>
+            <input type="submit" id="new-task-submit" value="Editar tarefa"/>
+
+        </form>
+    </header>
+    <main>
+        <div class="task-list">
+            <h2>Tarefas</h2>
+
+            <div id="tasks">
+                
+                <!-- <div class="task">
+                    <div class="content">
+                        <p class="name">texto</p>
+                        <p class="description">texto</p>
+                        <p class="finalDate">texto</p>
+                        <p class="priority">texto</p>
+                        <p class="category">texto</p>
+                        <p class="status">texto</p>
+                    </div>
+                    <div class="actions">
+                        <button class="delete">Deletar</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
