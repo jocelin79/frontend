@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 
         const task_content_el = document.createElement("div");
         task_content_el.classList.add("content");
-        task_content_el.innerText = task;
+        task_content_el.innerText = ("Tarefa: " + task[0] + " Descrição: " + task[1] + " Data Final: " + task[2] + " Prioridade: " + task[3] + " Categoria: " + task[4] + " Status: " + task[5]);
 
         task_el.appendChild(task_content_el);
 
