@@ -17,6 +17,11 @@ window.addEventListener('load', () => {
     from.addEventListener('submit', (e) => {
         e.preventDefault();
         
+         /*if(!(inputName.value&&inputDescription.value&&inputFinalDate.value&&inputPriority.value&&inputCategory.value&&inputStatus.value)) {
+            alert("Please fill out the task");
+            return;
+        }*/
+        
         let child = list_el.lastElementChild;
 
         while (child) {
@@ -35,11 +40,6 @@ window.addEventListener('load', () => {
         task[4] = inputCategory.value;
         task[5] = inputStatus.value;
         task[6] = count;
-
-        if(!task[5]) {
-            alert("Please fill out the task");
-            return;
-        }
 
         taskList.push(task);
 
@@ -106,16 +106,8 @@ window.addEventListener('load', () => {
     });
 
     edit_button.addEventListener('click', (e) => {
-        let task = [];
 
-        task[0] = inputName.value;
-        task[1] = inputDescription.value;
-        task[2] = inputFinalDate.value;
-        task[3] = inputPriority.value;
-        task[4] = inputCategory.value;
-        task[5] = inputStatus.value;
-
-        if(!task[5]) {
+        if(!inputStatus.value) {
             alert("Please fill out the task");
             return;
         }
@@ -126,7 +118,7 @@ window.addEventListener('load', () => {
         }
 
         taskList.forEach(e => {
-            if (e[6] == inputId) {
+            if (e[6] == inputId.value) {
                 e[0] = inputName.value;
                 e[1] = inputDescription.value;
                 e[2] = inputFinalDate.value;
