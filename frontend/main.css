@@ -134,6 +134,22 @@ input, button {
     opacity: 0.6;
 }
 
+#new-task-button {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-button:hover{
+    opacity: 0.8;
+}
+
+#new-task-button:active{
+    opacity: 0.6;
+}
+
 main {
     flex: 1 1 0%;
     padding: 2rem 1rem;
