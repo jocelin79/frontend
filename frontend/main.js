@@ -17,10 +17,10 @@ window.addEventListener('load', () => {
     from.addEventListener('submit', (e) => {
         e.preventDefault();
         
-         /*if(!(inputName.value&&inputDescription.value&&inputFinalDate.value&&inputPriority.value&&inputCategory.value&&inputStatus.value)) {
+         if(!(inputName.value&&inputDescription.value&&inputFinalDate.value&&inputPriority.value&&inputCategory.value&&inputStatus.value)) {
             alert("Please fill out the task");
             return;
-        }*/
+        };
         
         let child = list_el.lastElementChild;
 
